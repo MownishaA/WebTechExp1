@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Concerts Booking</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    .about-video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .running-text {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #ff5722;
+      background: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+      animation: marquee 10s linear infinite;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+
+    .about-text {
+      font-size: 1.2em;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 1.6;
+      padding: 10px;
+    }
+
+    .contact-details {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .material-icons {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .subscribe {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .subscribe input {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .subscribe button {
+      padding: 10px 15px;
+      background: #ff5722;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .feedback {
+      margin: 20px auto;
+      padding: 20px;
+      background: #f0f0f0;
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .feedback h3 {
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Noise And Grains</h1>
+    <p class="subtitle">Find and book tickets for amazing live music events!</p>
+    <hr>
+    <nav>
+      <a href="#home"><i class="material-icons">home</i>Home</a> |
+      <a href="#concerts"><i class="material-icons">event</i>Concerts</a> |
+      <a href="#about"><i class="material-icons">info</i>About</a> |
+      <a href="#contact"><i class="material-icons">phone</i>Contact</a> |
+      <a href="sign in.html"><i class="material-icons">login</i>Sign in</a>
+    </nav>
+    <hr>
+  </header>
+
+  
+  <section id="home">
+    <h2>Discover Your Favorite Concerts</h2>
+    <p>Explore events happening near you and enjoy the best live music experience.</p>
+    <br><img src="banner1.jpeg" alt="Concert Banner" class="hero-img">
+  </section>
+
+  <section id="concerts">
+    <center><h2>Upcoming Concerts</h2></center>
+    <div class="running-text">🔥 Book your tickets now for the hottest concerts! Limited seats available! 🎶</div>
+
+    <br>
+    <table>
+      <thead>
+        <tr>
+          <th>Concert Name</th>
+          <th>Date</th>
+          <th>Location</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="rock.jpeg" alt="Rock Night" class="concert-img"> Rock Night</td>
+          <td>Friday, Jan 26</td>
+          <td>Arena Hall</td>
+          <td><button>Book Now</button></td>
+        </tr>
+        <tr>
+          <td><img src="jazz.jpeg" alt="Jazz Evening" class="concert-img"> Jazz Evening</td>
+          <td>Saturday, Jan 27</td>
+          <td>Jazz Club</td>
+          <td><button>Book Now</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="about">
+    <center><h2>About Us</h2></center>
+    <p class="about-text">
+      Welcome to <strong>Noise and Grains</strong>, the ultimate destination for live music lovers! We are dedicated to connecting audiences with unforgettable musical experiences by providing seamless concert bookings and event updates. Whether you're into rock, jazz, pop, or classical performances, we ensure you get the best seats for your favorite events. Our mission is to bring the thrill of live music closer to you, making ticket booking effortless and ensuring you never miss a beat. Stay tuned, book your tickets, and get ready to experience the magic of live concerts!
+    </p>
+    <div class="about-video">
+      <video width="60%" controls>
+        <source src="https://videos.pexels.com/video-files/857173/857173-sd_640_360_24fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <hr>
+  </section>
+  <section class="subscribe">
+    <h2>Subscribe for Updates</h2>
+    <input type="email" placeholder="Enter your email...">
+    <button>Subscribe</button>
+  </section>
+
+  <section class="feedback">
+    <h3>Customer Feedback</h3>
+    <p>"Absolutely loved the seamless booking experience! Can't wait for my next concert." - Rahul S.</p>
+    <p>"Best platform for music lovers! Great service and quick bookings." - Priya M.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Noise And Grains. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank"><i class="material-icons">facebook</i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="material-icons">photo_camera</i></a>
+    </div>
+  </footer>
+</body>
+</html>
